@@ -3,3 +3,5 @@ O que eu vou aprender na Trybe:
 - Bash
 - Git
 - Ciência da Computação
+- Javascript
+- React
