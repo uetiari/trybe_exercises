@@ -24,6 +24,7 @@ div:nth-of-type(3n){
     background-color: yellow;
     width: 800px;
 }
+
 div:nth-of-type(3) h3{
     color: purple;
 }
@@ -40,4 +41,14 @@ div:nth-of-type(5n){
 }
 div:nth-of-type(5) h3{
     color: red;
+}
+
+div:nth-of-type(1) h3{
+    font-style: italic;
+}
+div:nth-of-type(2n+1) h3{
+    font-style: italic;
+}
+div:nth-of-type(5n) h3{
+    font-style: italic;
 }
