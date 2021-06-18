@@ -1,0 +1,9 @@
+p, h1 {
+    text-align: center;
+}
+li:hover {
+    background-color: #ffdd7f;
+}
+li:active {
+    color: red;
+}
