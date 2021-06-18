@@ -1,3 +1,7 @@
 div:hover{
     border: 2px solid yellow;
 }
+
+h3 {
+   color: palevioletred;
+}
