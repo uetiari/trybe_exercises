@@ -8,11 +8,27 @@ ol li:nth-of-type(odd){
     text-transform: uppercase; 
 }
 
+li {
+    font-size: 20px;
+}
+
+li em {
+    font-weight: 800;
+}
+
 h1, h2, h3 {
     color: red;
 }
 
-h1 > em {
+h1 em {
     font-size: 40px;
     border: 1px solid #000;
+}
+
+ul li:nth-of-type(-n+3) {
+    color: blue;
+}
+
+li:nth-of-type('java'){
+    background-color: pink;
 }
