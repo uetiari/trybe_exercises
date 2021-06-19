@@ -29,6 +29,26 @@ ul li:nth-of-type(-n+3) {
     color: blue;
 }
 
-li:nth-of-type('java'){
+.bg_pink {
     background-color: pink;
 }
+
+#aliados li a[href*="stackoverflow"] {
+    color: orange;
+  }
+  
+#aliados li a[href*="w3schools"] {
+    color: green;
+  }
+  
+#aliados li a[href*="mozilla"] {
+    color: black;
+  }
+  
+#aliados li a[href*="devdocs"] {
+    color: yellow;
+  }
+  
+#aliados li a[href*="trybe"] {
+    color: green;
+  }
