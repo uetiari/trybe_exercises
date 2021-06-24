@@ -9,6 +9,7 @@ switch (piece.toLowerCase()) {
     break;
   case "bispo" : 
     console.log("Bispo -> Diagonais");
+    break;
   default: 
     console.log("Peça inválida");
 }
