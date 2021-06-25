@@ -11,4 +11,3 @@ if (impares === 0) {
 } else {
   console.log(impares);
 }
-  
