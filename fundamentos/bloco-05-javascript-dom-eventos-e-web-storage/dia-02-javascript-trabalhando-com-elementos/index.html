@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bloco 5.2 - JavaScript - Trabalhando com elementos</title>
+</head>
+<body>
+
+  <div id="paiDoPai">
+    <div id="pai">
+      <div id="primeiroFilho"></div>
+      <div id="elementoOndeVoceEsta">
+        <div id="primeiroFilhoDoFilho"></div>
+        <div id="segundoEUltimoFilhoDoFilho"></div>
+      </div>
+      Atenção!
+      <div id="terceiroFilho"></div>
+      <div id="quartoEUltimoFilho"></div>
+    </div>
+  </div>
+
+  <script>
+    // 1- Acesse o elemento elementoOndeVoceEsta .
+    const elemento = document.getElementById('elementoOndeVoceEsta');
+
+    // 2 - Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.
+    const pai = elemento.parentElement;
+    pai.style.color = 'blue';
+
+    // 3 - Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos da aula anterior, como fazer isso?
+    const primeiroFilhoDoFilho = elemento.firstElementChild;
+    primeiroFilhoDoFilho.innerText = "Olá sou Primeiro Filho do Filho!";
+
+    // 4 - Acesse o primeiroFilho a partir de pai .
+    const primeiroFilho = pai.firstElementChild;
+
+    // 5 - Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta .
+    const primeiroFilhoFDP = elemento.previousElementSibling;
+
+    // 6 - Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta .
+    const atencao = elemento.nextSibling;
+
+    // 7 - Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta .
+    const terceiroFilho = elemento.nextElementSibling;
+
+    // 8 - Agora acesse o terceiroFilho a partir de pai .
+    const terceiroFilhoFDP = pai.lastElementChild.previousElementSibling;
+
+    // Crie um irmão para elementoOndeVoceEsta .
+    const irmaoElemento = document.createElement('p');
+    elemento.appendChild(irmaoElemento);
+
+    // Crie um filho para elementoOndeVoceEsta .
+
+    // Crie um filho para primeiroFilhoDoFilho .
+
+    // A partir desse filho criado, acesse terceiroFilho .
+
+  </script>
+</body>
+</html>

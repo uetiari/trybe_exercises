@@ -1,0 +1,8 @@
+Internet
+Unix
+Bash
+Windows
+Mac
+Raspy
+Telefone
+Arroz
