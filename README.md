@@ -4,7 +4,7 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 
 _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia, onde a pessoa só paga quando conseguir um bom trabalho."_
 
-O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda introdução ao desenvolvimento de software, front-end, back-end, ciẽncia da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.
+O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.
 
 ## Fundamentos do Desenvolvimento Web :white_check_mark:
 
@@ -31,8 +31,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [:white_check_mark:] 4-1: _JavaScript - Primeiros passos_
 - [:white_check_mark:] 4-2: _JavaScript - Array e loop For_
-- [:white_check_mark:] 4-3: _JavaScript - LÃ³gica de ProgramaÃ§Ã£o e Algoritmos_
-- [:white_check_mark:] 4-4: _JavaScript - Objetos e funÃ§Ãµes_
+- [:white_check_mark:] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
+- [:white_check_mark:] 4-4: _JavaScript - Objetos e funções_
 - [:white_check_mark:] 4-5: _[Projeto - Playground Functions](https://github.com/tryber/sd-014-b-project-playground-functions/pull/46)_
 
 ##### Bloco 5: Introdução - JavaScript - Projetos
@@ -47,4 +47,4 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 5-7: _[Projeto - Adivinhe a Cor]()_
 - [ ] 5-7: _[Projeto - Carta Misteriosa]()_
 
-# [...]
+#### [...]
