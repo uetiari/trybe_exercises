@@ -9,6 +9,10 @@ for (let key in info) {
 }
 info['recorrentes'] = 'Sim';
 console.log(info);
+for (let key in info) {
+  console.log(key);
+}
+
 
 // let info2 = {
 //   personagem: 'Tio Patinhas',
