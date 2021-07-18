@@ -79,6 +79,14 @@
       ps.innerHTML = ps.innerHTML.toUpperCase();
     }
     maiusculo();
+
+    function mostraTodosPs() {
+      let ps = document.getElementsByTagName('p');
+      for (let index = 0; index < ps.length; index += 1) {
+        console.log(ps[index].innerHTML);
+      }
+    }
+    mostraTodosPs();
     </script>
   </body>
 </html>
