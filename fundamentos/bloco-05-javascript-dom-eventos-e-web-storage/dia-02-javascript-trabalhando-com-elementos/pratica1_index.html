@@ -65,7 +65,9 @@
     filhoDoPrimeiroFilhoDoFilho.id = 'filhoDoPrimeiroFilhoDoFilho';
     primeiroFilhoDoFilho.appendChild(filhoDoPrimeiroFilhoDoFilho);
 
-    // A partir desse filho criado, acesse terceiroFilho .
+    // A partir desse filho criado, acesse terceiroFilho.
+    const terceiroFilho = filhoDoPrimeiroFilhoDoFilho.parentElement.parentElement.nextSibling;
+    console.log(terceiroFilho);
 
   </script>
 </body>
