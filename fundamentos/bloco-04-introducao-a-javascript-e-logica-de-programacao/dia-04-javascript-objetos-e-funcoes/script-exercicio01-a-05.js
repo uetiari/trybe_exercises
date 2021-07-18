@@ -7,3 +7,6 @@ let info = {
 for (let key in info) {
   console.log('Bem vinda, '+ info.personagem);
 }
+
+info['recorrente'] = 'Sim';
+console.log(info);
