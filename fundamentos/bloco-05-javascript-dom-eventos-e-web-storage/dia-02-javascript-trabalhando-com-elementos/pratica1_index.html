@@ -28,7 +28,9 @@
     // 2 - Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.
     const pai = elemento.parentElement;
     pai.style.color = 'blue';
-
+    // 3 - Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos da aula anterior, como fazer isso?
+    const primeiroFilhoDoFilho = elemento.firstElementChild;
+    primeiroFilhoDoFilho.innerText = "Olá sou Primeiro Filho do Filho!";
 
   </script>
 </body>
