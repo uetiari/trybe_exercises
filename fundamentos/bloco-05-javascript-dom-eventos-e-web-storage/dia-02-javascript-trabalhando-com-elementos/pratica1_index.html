@@ -69,6 +69,17 @@
     const terceiroFilho = filhoDoPrimeiroFilhoDoFilho.parentElement.parentElement.nextSibling;
     console.log(terceiroFilho);
 
+    // Remova todos os elementos filhos de paiDoPai exceto pai , elementoOndeVoceEsta e primeiroFilhoDoFilho .
+    const pai = document.getElementById('pai');
+    for (let index = pai.childNodes.length - 1; index >=0 ; index -= 1) {
+      const filhosAtuais = pai.childNodes[index];
+      if (filhosAtuais.id !== 'elementoOndeVoceEsta') {
+        filhosAtuais.remove();
+      }
+    }
+    const segundoEUltimoFilhoDoFilho = document.getElementById('segundoEUltimoFilhoDoFilho');
+    segundoEUltimoFilhoDoFilho.remove();
+    
   </script>
 </body>
 </html>
