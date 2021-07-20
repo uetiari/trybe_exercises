@@ -61,9 +61,14 @@
       const title = document.createElement('h1');
       title.innerText = 'Exercício 5.2 - JavaScript DOM';
       document.body.appendChild(title);
+
       const mainContent = document.createElement('main');
       mainContent.classList.add('main-content');
       document.body.appendChild(mainContent);
+
+      const centerContent = document.createElement('section');
+      centerContent.classList.add('center-content');
+      mainContent.appendChild(centerContent);
       
     </script>
   </body>
