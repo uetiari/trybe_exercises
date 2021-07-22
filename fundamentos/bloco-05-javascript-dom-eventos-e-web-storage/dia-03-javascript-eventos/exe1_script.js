@@ -139,7 +139,6 @@ function newTask(string) {
 newTask('Exercício: 1');
 
 function newTaskColor(color) {
-
   let myTask = document.querySelector('.my-tasks');
   let newDiv = document.createElement('div');
 
@@ -149,3 +148,18 @@ function newTaskColor(color) {
 };
 
 newTaskColor('green');
+
+function selectedTask() {
+  let taskSelected = document.getElementsByClassName('task selected');
+  let task = document.querySelector('.task');
+
+  task.addEventListener('click', function(event) {
+    if (taskSelected.length === 0) {
+      event.target.className = 'task selected';
+    } else {
+      event.target.className = 'task';
+    }
+  });
+};
+
+selectedTask();
