@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // COLOQUE SEU CÓDIGO AQUI
+      const title = document.createElement('h1');
+      title.innerText = 'Exercício 5.2 - JavaScript DOM';
+      document.body.appendChild(title);
+
+      const mainContent = document.createElement('main');
+      mainContent.classList.add('main-content');
+      document.body.appendChild(mainContent);
+
+      const centerContent = document.createElement('section');
+      centerContent.classList.add('center-content');
+      mainContent.appendChild(centerContent);
+
+      const parag = document.createElement('p');
+      parag.innerText = "Exercício de Javascript ^^b";
+      centerContent.appendChild(parag);
+
+      const leftContent = document.createElement('section');
+      leftContent.classList.add('left-content');
+      mainContent.appendChild(leftContent);
+
+      const rightContent = document.createElement('section');
+      rightContent.classList.add('right-content');
+      mainContent.appendChild(rightContent);
+
+      const image = document.createElement('img');
+      image.src = 'https://picsum.photos/200';
+      image.classList.add('small-image');
+      leftContent.appendChild(image);
+
+      const list = document.createElement('ul');
+      rightContent.appendChild(list);
+      const numbers = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+      for (let number in numbers) {
+        const li = document.createElement('li');
+        li.innerHTML = numbers[number];
+        list.appendChild(li);
+      }
+
+      for (let index = 1; index <= 3; index += 1) {
+        const h3 = document.createElement('h3');
+        h3.innerHTML = 'Tag h3 ' + index;
+        mainContent.appendChild(h3);
+      }
+
+    </script>
+  </body>
+</html>
