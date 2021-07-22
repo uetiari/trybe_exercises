@@ -126,3 +126,14 @@ function zoomDayOut() {
 
 zoomDayIn();
 zoomDayOut();
+
+function newTask(string) {
+
+  let myTasks = document.querySelector('.my-tasks');
+  let newSpan = document.createElement('span');
+
+  newSpan.innerHTML = string;
+  myTasks.appendChild(newSpan);
+};
+
+newTask('Exercício: 1');
