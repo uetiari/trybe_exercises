@@ -29,7 +29,17 @@
     <input type="radio" name="residType" id="apartment" value="apartment" required>
     <span>Apartamento</span>
   </fieldset>
-
+  
+  <fieldset>
+    <label for="resume">Resumo do currículo</label>
+    <textarea id="resume" name="resume" maxlength="1000" cols="100" rows="20" required></textarea>
+    <label for="cargo">Cargo: </label>
+    <input type="text" name="cargo" id="cargo" maxlength="40" required>
+    <label for="cargoDescription">Descrição do cargo: </label>
+    <input type="text" maxlength="500" id="cargoDescription" name="cargoDescription" required>
+    <label for="startDay">Data de início: </label>
+    <input type="text" class="startDay" name="startDay" value="" required>
+  </fieldset>
   
 </body>
 </html>
