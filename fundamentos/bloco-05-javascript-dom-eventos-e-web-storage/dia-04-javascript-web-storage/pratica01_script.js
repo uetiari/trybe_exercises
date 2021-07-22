@@ -1,7 +1,7 @@
 let organization = {
   name: "trybe",
   since: 2019
-}
+};
 
 // objeto "storage" pode ser localStorage ou sessionStorage
 
