@@ -42,3 +42,16 @@ function createDays() {
   }
 };
 createDays();
+
+function holidayBtn(string) {
+  const btnContainer = document.querySelector('.buttons-container');
+  const btnHoliday = document.createElement('button');
+  const btnHolidayId = 'btn-holiday';
+
+  btnHoliday.innerHTML = string;
+  btnHoliday.id = btnHolidayId;
+  btnContainer.appendChild(btnHoliday);
+
+}
+
+holidayBtn('Feriados');
