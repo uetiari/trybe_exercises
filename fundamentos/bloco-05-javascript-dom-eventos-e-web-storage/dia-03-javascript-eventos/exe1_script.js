@@ -87,3 +87,21 @@ function fridayBtn(string) {
 }
 
 fridayBtn('Sexta-feira');
+
+function fridays(array) {
+  const btnFriday = document.querySelector('#btn-friday');
+  const fridays = document.getElementsByClassName('friday');
+  const fridayText = 'SEXTOU =D';
+
+  btnFriday.addEventListener('click', function(){
+    for (let index = 0; index < fridays.length; index += 1){
+      if (fridays[index].innerHTML !== fridayText) {
+        fridays[index].innerHTML = fridayText;
+      } else {
+        fridays[index].innerHTML = array[index];
+      }
+    }
+  })
+}
+const listFriday = [ 4, 11, 18, 25];
+fridays(listFriday);
