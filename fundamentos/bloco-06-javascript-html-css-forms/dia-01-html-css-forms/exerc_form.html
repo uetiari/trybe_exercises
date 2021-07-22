@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="exerc_form.css"></link>
+  <script src="exerc_form.js" async></script>
+  <title>Document</title>
+</head>
+<body>
+  <form>
+    <fieldset>
+      <label for="input-nome">Nome: </label>
+      <input type="text" name="nome" id="input-nome" maxlength="40" required></input> <br>
+      <label for="input-email">Email: </label>
+      <input type="email" name="email" id="input-email" maxlength="50" required></input> <br>
+      <label for="input-cpf">CEP: </label>
+      <input type="text" name="cpf" id="input-cpf" maxlength="11"></input> <br>
+      <label for="address">Endereço: </label>
+      <input type="text" name="address" id="address" maxlength="200"></input> <br>
+      <label for="city">Cidade: </label>
+      <input type="text" name="city" id="city" maxlength="28"></input> <br>
+      <label for="state">Estado: </label>
+      <select type="select" name="state" id="state" required>
+        <option required selected value>Selecione seu estado.</option>
+      </select> <br>
+      <label for="residType">Tipo de residência: </label>
+      <input type="radio" name="residType" id="house" value="house" required>
+      <span>Casa</span>
+      <input type="radio" name="residType" id="apartment" value="apartment" required>
+      <span>Apartamento</span>
+    </fieldset>
+    
+    <fieldset>
+      <label for="resume">Resumo do currículo</label>
+      <textarea id="resume" name="resume" maxlength="1000" cols="100" rows="20" required></textarea>
+      <label for="cargo">Cargo: </label>
+      <input type="text" name="cargo" id="cargo" maxlength="40" required>
+      <label for="cargoDescription">Descrição do cargo: </label>
+      <input type="text" maxlength="500" id="cargoDescription" name="cargoDescription" required>
+      <label for="startDay">Data de início: </label>
+      <input type="date" class="input-data" name="startDay" required>
+    </fieldset>
+
+    <button class="submit-button" type="submit">Enviar</button>
+    <button class="clear-button" type="button">Limpar</button>
+  </form>
+</body>
+</html>
