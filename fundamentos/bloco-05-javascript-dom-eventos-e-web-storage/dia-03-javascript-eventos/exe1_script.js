@@ -137,3 +137,15 @@ function newTask(string) {
 };
 
 newTask('Exercício: 1');
+
+function newTaskColor(color) {
+
+  let myTask = document.querySelector('.my-tasks');
+  let newDiv = document.createElement('div');
+
+  newDiv.className = 'task';
+  newDiv.style.backgroundColor = color;
+  myTask.appendChild(newDiv);
+};
+
+newTaskColor('green');
