@@ -18,8 +18,15 @@ firstLi.addEventListener('click', addTech);
 secondLi.addEventListener('click', addTech);
 thirdLi.addEventListener('click', addTech);
 
-/* Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
-com a classe 'tech';
+/* 
+ 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento com a classe 'tech'; */
+function changeInput(event) {
+  const tech = document.querySelector('.tech');
+  tech.innerText = event.target.value;
+}
+ input.addEventListener('input', changeInput);
+ 
+/*
  Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 redirecione para alguma página;
 1. Que tal redirecionar para seu portifólio?
