@@ -55,3 +55,33 @@ assert.deepStrictEqual(person1, person2, 'Erro: person1 e person2 não são estr
 const person3 = { name: 'john', age: 19 };
 
 assert.notDeepStrictEqual(person1, person3, 'Erro: os valores dos objetos são estritamente iguais');
+
+//função 6 para teste
+function division(x, y) {
+  return x / y;
+}
+
+const assert = require('assert');
+
+// declaração da função division, definida anteriormente...
+
+// assert.strictEqual(division(10, 2), 5); // OK
+// assert.strictEqual(division(10, 0), 0); // 💣
+
+function division(x, y) {
+  if (y === 0) throw new Error('parameter y must not be 0');
+  return x / y;
+}
+
+// assert.strictEqual(division(10, 2), 5); // OK
+assert.throws(() => { division(10, 0); }, /^Error: parameter y must not be 0$/); // OK
+
+//função 7 para teste
+//usando o throw
+function division(x, y) {
+  // Queremos que o código retorne um erro com uma mensagem específica
+  // caso o parâmetro y seja 0. Por isso lançamos uma exceção se essa condição
+  // for verdadeira, o que irá interromper a execução da função.
+  if (y === 0) throw new Error('parameter y must not be 0');
+  return x / y;
+}
