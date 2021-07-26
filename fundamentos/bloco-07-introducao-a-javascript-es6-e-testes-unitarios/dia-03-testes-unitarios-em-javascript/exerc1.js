@@ -20,5 +20,5 @@ assert.strictEqual(expected, 9, 'O valor esperado deveria ser numérico');
 const expected = sum(0, 0);
 assert.strictEqual(expected, 0, 'A soma de zero é Zero');
 const expected = sum(4, '5');
-assert.strictEqual(expected, 'Os parâmetros deveria ser numéricos');
+assert.throws = (expected, 'Os parâmetros deveria ser numéricos');
 assert.throws = (expected, /^Error: parameters must be numbers$/); 
