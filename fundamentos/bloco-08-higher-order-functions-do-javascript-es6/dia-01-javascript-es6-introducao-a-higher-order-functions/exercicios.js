@@ -4,7 +4,6 @@ const newEmployees = (employeeGenerator) => {
     id1: employeeGenerator('Pedro Guerra'),
     id2: employeeGenerator('Luiza Drumond'),
     id3: employeeGenerator('Carla Paiva'),
-    
   };
   return employees;
 };
@@ -31,8 +30,8 @@ console.log(lotteryResult(2, numberChecker));
 const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
 const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
 
-function answers (right, verify, check) {
-  return checked = check(right, verify);
+function answers (right, verify, callback) {
+  return callback(right, verify);
 }
  const check = (a, b) => {
   let count = 0;
