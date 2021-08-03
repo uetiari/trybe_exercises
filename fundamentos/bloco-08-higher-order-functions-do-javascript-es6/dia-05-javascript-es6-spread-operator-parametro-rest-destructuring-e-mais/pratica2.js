@@ -1,8 +1,8 @@
 const saudacoes = ['Olá', (saudacao) => console.log(saudacao)];
 
-saudacoes[1](saudacoes[0]); // Olá
+//saudacoes[1](saudacoes[0]); // Olá
 
 // Produza o mesmo resultado acima, porém utilizando array destructuring
-const [saudacao] = saudacoes;
+const [saudacao, fazSaudacao] = saudacoes;
 
-console.log(saudacao)
+console.log(fazSaudacao(saudacao));
