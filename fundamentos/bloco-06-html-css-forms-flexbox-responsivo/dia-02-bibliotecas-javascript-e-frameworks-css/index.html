@@ -1,31 +1,73 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" async></script>
-  <title> Formulário com Bibliotecas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css"></link>
+ <script src="script.js" async></script>
+
+
+  <title>Document</title>
 </head>
 <body>
-  <header>
-    
-  </header>
-  <main>
-    
-  </main>
-  <aside>
+  <form>
+    <fieldset>
+      <input class="form-control" type="text" placeholder="Nome" name="nome" id="input-nome" maxlength="40" required aria-label="default input example"></input>
+      <br>
+      <input  class="form-control" type="email" name="email" id="input-email" placeholder="name@example.com" maxlength="50" required>
+      <br>
+      <input class="form-control" type="text" name="cpf" id="input-cpf" maxlength="11" placeholder="CPF"></input>
+      <br>
+      <input class="form-control" type="text" name="address" id="address" maxlength="200" placeholder="Endereço"></input>
+      <br>
+      <input class="form-control" type="text" name="city" id="city" maxlength="28" placeholder="Cidade"></input>
+      <br>
+      <label for="state">Estado: </label>
+      <select class="form-select" type="select" name="state" id="state" required>
+        <option required selected value>Selecione seu estado.</option>
+      </select>
+      <br>
+      <label for="residType">Tipo de residência: </label> <br>
+        <input class="form-check-input" type="radio" name="residType" id="house" value="house" required>
+        <span>Casa</span> 
+        <br>
+        <input class="form-check-input" type="radio" name="residType" id="apartment" value="apartment" required>
+        <span>Apartamento</span>
+      </div>
+    </fieldset>
+    <br>
+    <fieldset>
+      <label for="resume">Resumo do Currículo</label>
+      <div class="form-floating">
+        <textarea class="form-control" id="resume" name="resume" maxlength="1000" cols="100" rows="20" placeholder="Resumo do Currículo" required></textarea>
+      <br>
+      </div>
+      
+      <label for="cargo">Cargo: </label> <br>
+        <input type="text" name="cargo" id="cargo" maxlength="40" required>
+        <br> <br>
+      <label for="cargoDescription">Descrição do cargo: </label><br>
+        <input type="text" maxlength="500" id="cargoDescription" name="cargoDescription" required>
+      <br>
+      <br>
+        <label for="startDay">Data de início: </label>
+        <input type="date" id="datepicker" class="input-data" name="startDay" required>
+      </div>
+    </fieldset>
+    <br>
+    <button class="btn btn-success submit-button"  type="submit">Enviar</button>
 
-  </aside>
-  <footer>
-
-  </footer>
+    <button class="btn btn-warning clear-button" type="button">Limpar</button>
+  </form>
 </body>
 </html>
 
 <!--
   1. Adicione um framework CSS de sua escolha ao formulário que você construiu na última aula e o utilize para estilizar o formulário.
+
   2. Adicione uma biblioteca JavaScript de date picker ao formulário que você construiu na última aula. Utilize essa biblioteca no campo "Data de início" do formulário. Você pode remover as validações de data que adicionou, uma vez que a biblioteca se encarregará de permitir somente datas válidas.
+
   3. Adicione uma biblioteca JavaScript de validações ao formulário que você construiu na última aula. Utilize essa biblioteca para substituir as validações que você fez manualmente.
 -->
