@@ -33,6 +33,7 @@ const personalPromise = () => {
   myPromise
   .then((soma) => [2, 3, 5, 10].map(number => soma / number))
   // myPromise.then(() => console.log('Promise Resolvida :)'))
+  .then((newNumbers) => newNumbers.reduce((acc, curr) => acc + curr, 0)) // vai usar o array de cima, para somar a partir do 0 de param. inicial
   .catch((soma) => console.log(`${soma} =O É mais de oito mil! Essa promise deve estar quebrada!`))
     // .catch(() => console.log('Promise Rejeitada :('));
 }
