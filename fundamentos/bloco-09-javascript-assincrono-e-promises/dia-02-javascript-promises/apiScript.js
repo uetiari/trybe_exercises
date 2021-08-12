@@ -14,3 +14,26 @@ const fetchJoke = () => {
 };
 
 window.onload = () => fetchJoke();
+
+// Exercício 2 até 5
+const personalPromise = () => {
+  const myPromise = new Promise((resolve, reject) => { // isso que é instanciar uma Promise
+    const numbers = Array.from( // substitui o for convencional
+      { length: 10 }, // tamanho do array que vai criar
+      () => Math.floor(Math.random() * 50) + 1, // números randômicos de 1 à 50 
+    );
+
+    // fazendo tds números do array serem elevados ao quadrado
+    const soma = numbers.map(number => number * number)
+    // somar todos onde acc será a soma, e curr será o número
+    .reduce((acc, curr) => acc + curr );
+    //faz a verificação para resolver ou rejeitar, pode add soma nos param dos dois
+    soma < 8000 ? resolve(soma) : reject(soma);
+  });
+  myPromise.then((soma) => console.log(`Promise Resolvida ${soma} :D`))
+  // myPromise.then(() => console.log('Promise Resolvida :)'))
+  .catch((soma) => console.log(`Promise Rejeitada ${soma} :(`))
+    // .catch(() => console.log('Promise Rejeitada :('));
+}
+
+personalPromise();
