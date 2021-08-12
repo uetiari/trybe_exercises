@@ -26,11 +26,12 @@ const personalPromise = () => {
     // fazendo tds números do array serem elevados ao quadrado
     const soma = numbers.map(number => number * number)
     // somar todos onde acc será a soma, e curr será o número
-    .reduce((acc, curr) => acc + curr );
+    .reduce((acc, curr) => acc + curr, 0);
     //faz a verificação para resolver ou rejeitar, pode add soma nos param dos dois
-    soma < 8000 ? resolve(soma) : reject(soma);
+    soma < 8000 ? resolve(soma) : reject();
   });
-  myPromise.then((soma) => console.log(`Promise Resolvida ${soma} :D`))
+  myPromise
+  .then((soma) => [2, 3, 5, 10].map(number => soma / number))
   // myPromise.then(() => console.log('Promise Resolvida :)'))
   .catch((soma) => console.log(`Promise Rejeitada ${soma} :(`))
     // .catch(() => console.log('Promise Rejeitada :('));
