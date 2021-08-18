@@ -1,5 +1,19 @@
 {
   "scripts": {
     "test": "jest --watchAll"
-  }
+  },
+  "name": "dia-1-primeiros-passos-no-jest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "jest --watchAll"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^27.0.6"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
