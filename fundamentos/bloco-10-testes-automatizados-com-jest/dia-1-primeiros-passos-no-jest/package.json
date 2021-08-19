@@ -6,7 +6,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "directories": {
-    "test": "jest --watchAll"
+    "test": "jest"
   },
   "dependencies": {},
   "devDependencies": {
