@@ -6,23 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css"></link>
- <script src="script.js" async></script>
-
+  <script defer src="script.js"></script>
+  <script defer src="js/just-validate.min.js"></script>
 
   <title>Document</title>
 </head>
 <body>
   <form>
     <fieldset>
-      <input class="form-control" type="text" placeholder="Nome" name="nome" id="input-nome" maxlength="40" required aria-label="default input example"></input>
+      <input class="form-control" type="text" data-validate-field="name" placeholder="Nome" name="name" id="input-nome" maxlength="40" required aria-label="default input example"></input>
       <br>
-      <input  class="form-control" type="email" name="email" id="input-email" placeholder="name@example.com" maxlength="50" required>
+      <input  class="form-control" type="email" name="email" data-validate-field="email" id="input-email" placeholder="name@example.com" maxlength="50" required>
       <br>
-      <input class="form-control" type="text" name="cpf" id="input-cpf" maxlength="11" placeholder="CPF"></input>
+      <input class="form-control" type="text" name="cpf" data-validate-field="cpf" id="input-cpf" maxlength="11" placeholder="CPF"></input>
       <br>
-      <input class="form-control" type="text" name="address" id="address" maxlength="200" placeholder="Endereço"></input>
+      <input class="form-control" type="text" name="address" data-validate-field="addrress" id="address" maxlength="200" placeholder="Endereço"></input>
       <br>
-      <input class="form-control" type="text" name="city" id="city" maxlength="28" placeholder="Cidade"></input>
+      <input class="form-control" type="text" name="city" data-validate-field="city" id="city" maxlength="28" placeholder="Cidade"></input>
       <br>
       <label for="state">Estado: </label>
       <select class="form-select" type="select" name="state" id="state" required>
@@ -30,10 +30,10 @@
       </select>
       <br>
       <label for="residType">Tipo de residência: </label> <br>
-        <input class="form-check-input" type="radio" name="residType" id="house" value="house" required>
+        <input class="form-check-input" type="radio" name="residType" data-validate-field="residType" id="house" value="house" required>
         <span>Casa</span> 
         <br>
-        <input class="form-check-input" type="radio" name="residType" id="apartment" value="apartment" required>
+        <input class="form-check-input" type="radio" name="residType" data-validate-field="residType" id="apartment" value="apartment" required>
         <span>Apartamento</span>
       </div>
     </fieldset>
