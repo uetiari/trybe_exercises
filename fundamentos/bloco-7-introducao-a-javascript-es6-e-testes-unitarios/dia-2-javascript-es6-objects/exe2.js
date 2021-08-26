@@ -23,3 +23,6 @@ const addNewKey = (obj, key, value) => {
 };
 
 addNewKey(lesson2, 'turno', 'noite');
+
+const listKeys = (obj) =>  Object.keys(obj);
+console.log(listKeys(lesson1));
