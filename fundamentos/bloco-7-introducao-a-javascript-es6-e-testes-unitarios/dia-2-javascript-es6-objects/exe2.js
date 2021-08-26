@@ -32,3 +32,33 @@ console.log(sizeObj(lesson1));
 
 const listValues = (obj) =>  Object.values(obj);
 console.log(listValues(lesson1));
+
+console.log(allLessons);
+/*
+{
+  lesson1:
+   { materia: 'Matemática',
+     numeroEstudantes: 20,
+     professor: 'Maria Clara',
+     turno: 'manhã' },
+  lesson2:
+   { materia: 'História',
+     numeroEstudantes: 20,
+     professor: 'Carlos',
+     turno: 'noite' },
+  lesson3:
+   { materia: 'Matemática',
+     numeroEstudantes: 10,
+     professor: 'Maria Clara',
+     turno: 'noite' }
+};
+*/
+const getNumberOfStudents = (obj) => {
+  let total = 0;
+  const array = Object.keys(obj);
+  for (index in array) {
+    total += obj[array[index]].numeroEstudantes;
+  }
+  return total;
+};
+console.log(getNumberOfStudents(allLessons));
