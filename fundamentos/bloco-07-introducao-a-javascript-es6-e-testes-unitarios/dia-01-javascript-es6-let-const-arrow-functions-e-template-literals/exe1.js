@@ -1,4 +1,4 @@
-(escopo) => {
+function (escopo) => {
   if (escopo === true) {
     var ifScope = 'Não devo ser utilizada fora do meu escopo (if)';
     ifScope = `${ifScope} ótimo, fui utilizada no escopo !`;
