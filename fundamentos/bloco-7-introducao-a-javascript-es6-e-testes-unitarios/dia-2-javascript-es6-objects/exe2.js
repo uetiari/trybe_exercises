@@ -69,3 +69,18 @@ const getValueByNumber = (obj,number) => Object.values(obj)[number];
 
 console.log(getValueByNumber(lesson1, 0));
 // Output: 'Matématica'
+
+
+const verifyPair = (obj, key, value) => {
+  const arr = Object.entries(obj);
+  let isEqual = false;
+  for (let index in arr) {
+    if (arr[index][0] === key && arr[index][1] === value) isEqual = true;
+  }
+  return isEqual;
+};
+
+console.log(verifyPair(lesson3, 'turno', 'noite'));
+// Output: true,
+console.log(verifyPair(lesson3, 'materia', 'Maria Clara'));
+// Output: false
