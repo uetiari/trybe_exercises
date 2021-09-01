@@ -6,7 +6,7 @@ class Pokedex extends React.Component { // cria o componente da Pokedex com clas
     const { pokemons } = this.props; // desestrutura o pokemons do data.js
     return (
       <div className='pokedex'> {/*cria uma div com nome de pokedex onde aparecerá todos os pokemons */} 
-        { pokemons.map(pokemon => <Pokemon key={pokemons.id} pokemon={pokemon} /> )} {/* Faz um map em todos pokemons e retorna um novo array e para cada pokemon ele passa as infos que deve ter em cada Pokemon adicionando a id como key */}
+        { pokemons.map(monster => <Pokemon key={pokemons.id} pokemon={monster} /> )} {/* Faz um map em todos pokemons e retorna um novo array e para cada monster ele passa as infos que deve ter em cada Pokemon adicionando a id como key */}
       </div>
     );
   }
