@@ -1,12 +1,12 @@
-import React from 'react';
-import Pokemon from './Pokemon';
+import React from 'react'; // importa o React
+import Pokemon from './Pokemon'; // importa o pokémon criado(1º passo)
 
-class Pokedex extends React.Component {
+class Pokedex extends React.Component { // cria o componente da Pokedex com classe
   render(){
-    const { pokemons } = this.props;
+    const { pokemons } = this.props; // desestrutura o pokemons do data.js
     return (
-      <div className='pokedex'>
-        { pokemons.map(pokemon => <Pokemon key={pokemons.id} pokemon={pokemon} /> )}
+      <div className='pokedex'> {/*cria uma div com nome de pokedex onde aparecerá todos os pokemons */} 
+        { pokemons.map(pokemon => <Pokemon key={pokemons.id} pokemon={pokemon} /> )} {/* Faz um map em todos pokemons e retorna um novo array e para cada pokemon ele passa as infos que deve ter em cada Pokemon adicionando a id como key */}
       </div>
     );
   }
