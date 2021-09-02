@@ -4,19 +4,20 @@ import './App.css';
 class App extends React.Component {
   constructor() {
     super()
+    this.state = {
+      clickNumbers: 0
+    }
     this.handleClick = this.handleClick.bind(this);
   }
   
-  handleClick() {
-    console.log('Clicou, miserávi!')
+  handleClick = () => {
+    this.setState((stateBefore, _props) => ({
+      clickNumbers: stateBefore.clickNumbers + 1
+    }))
   }
   
-  render(){
-    return (
-      <section className="buttons">
-        <button onClick={ this.handleClick }>Aperte aqui!</button>
-      </section>
-    );
+  render() {
+    return <button onClick={ this.handleClick }>{ this.state.clickNumbers }</button>
   }
 }
 
