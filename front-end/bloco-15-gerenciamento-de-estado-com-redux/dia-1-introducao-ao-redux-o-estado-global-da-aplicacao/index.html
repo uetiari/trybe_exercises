@@ -37,15 +37,26 @@
         colors: ['white', 'black', 'red', 'green', 'blue', 'yellow'],
         index: 0,
       };
-      // Exercício 1 - 1/6 Crie uma store para a nossa aplicação.
-      const store = Redux.createStore(reducer);
-      // Exercício 1 - 2/6 Criar um reducer com switch
+      
       const reducer = (state = ESTADO_INICIAL, action) => {
         switch(action.type) {
+          case "NEXT_COLOR" :
+            return {
+              ...state,
+              index: state.index === state.colors.length -1 ? 0 : state.index + 1
+            }
+          case "PREVIOUS_COLOR" :
+            return {
+              ...state,
+              index: state.index === 0 ? state.colors.length -1 : state.index -1
+            }
           default:
           return state;
         }
       }
+      
+      const store = Redux.createStore(reducer);
+      
     </script>
   </body>
 </html>
