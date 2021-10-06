@@ -57,6 +57,13 @@
       
       const store = Redux.createStore(reducer);
       
+      document.getElementById('previous').addEventListener('click', () => {
+        store.dispatch({ type: 'PREVIOUS_COLOR'});
+      });
+      document.getElementById('next').addEventListener('click', () => {
+        store.dispatch({ type: 'NEXT_COLOR'});
+      });
+
     </script>
   </body>
 </html>
